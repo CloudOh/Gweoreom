@@ -7,16 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <nav class="nav">
         <div id="menu">
-            <img src="Chelsea.png" width="30px">
+            <img src="img/Chelsea.png" width="30px">
             <ol>
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="info.html" >about구름</a></li>
                 <li><a href="rule.html" >규칙</a></li>
                 <li><a href="photo.html">사진관</a></li>
+                <li><a href="post.html">게시판</a></li>
             </ol>
         </div>
     </nav>
@@ -31,19 +33,19 @@
         <div id="specarticle">
             <div id="malpoo">
                 <p>
-                <img src="maltese.jpg" width="500px">
-                <img src="poodle.png" width="500px" height="333px">
+                <img src="img/maltese.jpg" width="500px">
+                <img src="img/poodle.png" width="500px" height="333px">
                 </p>
             </div>
             <p>
                 <strong>말티즈</strong>와 <strong>푸들</strong>을 교배해 탄생한 종을 <strong><mark><big><u>말티푸</u></big></mark></strong>라 부릅니다!
             </p>
             <p>
-                <big><b>궈럼이</b></big> 또한 <Strong>말티푸!</Strong><br>
+                <big><b>궈럼이</b></big> 또한 <strong>말티푸!</strong><br>
                 어마어마한 귀여움을 가지고 있지요.
             </p>
             <div id="specGrid">
-                <img src="cloud3.jpg" width ="300px">
+                <img src="img/cloud3.jpg" width ="300px">
                 <div id="malpooChar">
                 <span><b>그렇다면 말티푸의 특성은 무엇일까요?</b></span>
                     <p>
@@ -66,43 +68,29 @@
                             <b>그냥 너무 귀여워요.</b>
                         </li>
                     </p>
+                    
                 </div>
+                
             </div>
-            <p>   
-                <div id="disqus_thread"></div>
-                    <script>
-                        /**
-                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                        /*
-                        var disqus_config = function () {
-                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                        };
-                        */
-                        (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://gweoreom.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <p>
+                <div id ="infoChat">
+                    <h2>소감</h2>
+                    <form action="/dogs" id="instaForm">
+                        <input type="text" name="username" placeholder="이름" style="width:300px;height: 30px;font-size:30px;"/>
+                        <input type="text" name="comment" placeholder="소감" style="width:300px; height: 30px;font-size:30px;"/>
+                        <button style="width:100px;height:25px;font-size:15px; ">댓글 달기</button>
+                    </form>
+                    
+            
+                    <ul id="comments">
+                        <h2>[댓글]</h2>
+                    </ul>
+                    <script src="comment.js"></script>
+                </div>
             </p>
         </div>
     </div>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/62b6ebab7b967b11799673d7/1g6d8h6eg';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
-        <!--End of Tawk.to Script-->
+    
 </body>
 </html>

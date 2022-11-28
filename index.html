@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>구사모</title>
@@ -7,23 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <nav class="nav">
         <div id="menu">
-            <img src="Chelsea.png" width="30px">
+            <img src="img/Chelsea.png" width="40px">
             <ol>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="info.html" >about구름</a></li>
-                <li><a href="rule.html" >규칙</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">about구름</a></li>
+                <li><a href="rule.html">규칙</a></li>
                 <li><a href="photo.html">사진관</a></li>
+                <li><a href="photo.html">게시판</a></li>
             </ol>
         </div>
     </nav>
     <h1>구름이를 사랑하는 사람들의 모임</h1>
-    <div id="grid">
+    <div id="mainarticle">
         <div id="image">
-            <img src="cloud1.jpg" width="800px">
+            <img src="img/cloud1.jpg" id="mainImage" alt="slide" width="1000px" height="1050px">
+            <script src="imageRotation.js"></script>
         </div>
         <div id="article">
             <ul>
@@ -41,44 +46,10 @@
                     어느새 피로는 저 멀리 날아가 있을 것이고<br>
                     그대들의 삶에 궈럼이라는 존재가 힘이 되어줄 것입니다.
                 </p>
-                    
-                <p>   
-                    <div id="disqus_thread"></div>
-                        <script>
-                            /**
-                            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                            /*
-                            var disqus_config = function () {
-                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                            };
-                            */
-                            (function() { // DON'T EDIT BELOW THIS LINE
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://gweoreom.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                            })();
-                        </script>
-                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                </p>
-                
+
             </ul>
         </div>
     </div>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/62b6ebab7b967b11799673d7/1g6d8h6eg';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
 </body>
+
 </html>

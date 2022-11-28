@@ -1,13 +1,15 @@
-body{
+body {
     background-color: seashell;
     font-family: 'Nanum Pen Script', cursive;
 }
-a{
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-h1{
-    font-size:60px;
+
+h1 {
+    font-size: 60px;
     text-align: center;
     border: 10px groove blue;
     margin: 10px;
@@ -17,44 +19,59 @@ h1{
     background-color: lightsteelblue;
     font-family: 'none';
 }
-.nav{
+
+.nav {
     display: inline;
+
 }
-.nav a{
+
+
+.nav a {
     color: black;
-    font-size:30px;
+    font-size: 30px;
 }
-.nav ol{
-    text-align:right;
+
+.nav ol {
+    text-align: right;
     padding: 5px;
 }
-.nav li{
+
+.nav li {
     display: inline;
     padding: 15px;
-    
+
 }
-#menu img{
+
+#menu {
+    background-color: aliceblue;
+}
+
+#menu img {
     position: relative;
     float: left;
+    padding-top: 3px;
     padding-left: 30px;
 }
-#grid #image{
-    
+
+#grid #image {
+
     border: 5px double blue;
 }
-#grid{
+
+#grid {
     display: grid;
     grid-template-columns: 810px 1fr;
     padding-left: 10px;
     padding-right: 10px;
 }
-#grid #article ul{
+
+#grid #article ul {
     font-size: 40px;
     text-align: center;
     margin: 0px;
 }
 
-#infoGrid{
+#infoGrid {
     display: grid;
     height: auto;
     grid-template-columns: 200px 1fr;
@@ -62,142 +79,167 @@ h1{
     margin: 10px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color : mistyrose;
+    background-color: mistyrose;
 }
-#infoGrid a{
+
+#infoGrid a {
     color: blue;
     text-decoration: none;
-    
+
 }
-#infoGrid ol{
-    border-right:1px solid black;
-    width:200px;
+
+#infoGrid ol {
+    border-right: 1px solid black;
+    width: 200px;
     margin: 0px;
     padding-right: 10px;
     line-height: 80px;
     font-size: 45px;
 }
-#infoGrid #infoarticle span{
+
+#infoGrid #infoarticle span {
     font-size: 100px;
-    
+
 }
-#infoGrid #infoarticle{
-    padding-left:67px;
+
+#infoGrid #infoarticle {
+    padding-left: 67px;
     margin: 100px 0px;
     text-align: center;
 }
-#infoGrid #specarticle{
-    padding-left:67px;
+
+#infoGrid #specarticle {
+    padding-left: 67px;
     text-align: center;
     font-size: 35px;
 }
 
-#infoGrid #specarticle strong{
+#infoGrid #specarticle strong {
     color: mediumspringgreen;
 }
 
-#infoGrid #specarticle #malpoo{
-    text-align:center;
+#infoGrid #specarticle #malpoo {
+    text-align: center;
 }
-#infoGrid #specarticle #specGrid{
+
+#infoGrid #specarticle #specGrid {
     display: grid;
     grid-template-columns: 350px 1fr;
-    margin-left : 200px;
+    margin-left: 200px;
     margin-bottom: 50px;
 }
-#infoGrid #specarticle #specGrid #malpooChar{
+
+#infoGrid #specarticle #specGrid #malpooChar {
     text-align: left;
-    line-height:40px;
+    line-height: 40px;
 }
-#infoGrid #whereArticle{
+
+#infoGrid #whereArticle {
     margin-left: 300px;
-    margin-right : 300px;
+    margin-right: 300px;
     margin-top: 50px;
 }
-#infoGrid #whereArticle #angelGrid{
+
+#infoGrid #whereArticle #angelGrid {
     display: grid;
     grid-template-columns: 420px 1fr;
 }
-#infoGrid #whereArticle #angelGrid #angel{
-    font-size : 35px;
+
+#infoGrid #whereArticle #angelGrid #angel {
+    font-size: 35px;
     text-align: center;
-    margin-top : 25px;
+    margin-top: 25px;
 }
-#infoGrid #whereArticle #ysGrid{
+
+#infoGrid #whereArticle #ysGrid {
     display: grid;
     grid-template-columns: 400px 1fr;
-    font-size : 30px;
-    text-align:center;
-    margin-top: 50px;
-}
-#infoGrid #whereArticle #ysGrid #Ysimg{
-    margin-top: 50px;
-}
-#infoGrid #featArticle{
+    font-size: 30px;
     text-align: center;
-    margin-top : 50px;
-    font-size : 40px;
-    
+    margin-top: 50px;
 }
-#infoGrid #featArticle #positiveGrid{
-    display : grid;
+
+#infoGrid #whereArticle #ysGrid #Ysimg {
+    margin-top: 50px;
+}
+
+#infoGrid #featArticle {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+
+}
+
+#infoGrid #featArticle #positiveGrid {
+    display: grid;
     grid-template-columns: 320px 1fr;
     margin-left: 300px;
-    margin-top : 50px;
+    margin-top: 50px;
 }
-#infoGrid #featArticle #positiveGrid img{
-    margin-top : 40px;
+
+#infoGrid #featArticle #positiveGrid img {
+    margin-top: 40px;
 }
-#infoGrid #featArticle #positiveGrid #positiveFeat{
+
+#infoGrid #featArticle #positiveGrid #positiveFeat {
     text-align: left;
-    font-size : 35px;
-    
+    font-size: 35px;
+
 }
-#infoGrid #featArticle #positiveGrid #positiveFeat strong{
+
+#infoGrid #featArticle #positiveGrid #positiveFeat strong {
     color: red;
 }
-#infoGrid #featArticle #negativeGrid{
+
+#infoGrid #featArticle #negativeGrid {
     display: grid;
     grid-template-columns: 500px 1fr;
-    font-size : 35px;
-    text-align:center;
+    font-size: 35px;
+    text-align: center;
     margin-top: 50px;
     margin-left: 250px;
 }
-#infoGrid #featArticle #negativeGrid #negativeImg{
-    text-align :left;
+
+#infoGrid #featArticle #negativeGrid #negativeImg {
+    text-align: left;
     margin-left: 20px;
-    margin-top : 50px;
+    margin-top: 50px;
 }
-#infoGrid #featArticle #chat{
+
+#infoGrid #featArticle #chat {
     margin-left: 300px;
     margin-right: 300px;
 }
-#ruleArticle{
+
+#ruleArticle {
     display: block;
     border: solid black 5px;
-    text-align : center;
-    font-size : 35px;
-    margin-left: 100px;
-    margin-right:100px;
-    margin-top:50px;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
     background-color: antiquewhite;
     font-family: '궁서';
 }
-#ruleArticle b{
+
+#ruleArticle b {
     font-size: 50px;
     color: red;
 }
-#ruleArticle #ruleEnd{
+
+#ruleArticle #ruleEnd {
     font-size: 30px;
     margin-top: 100px;
 }
-#ruleArticle #ruleChat{
-    margin-left:200px;
+
+#ruleArticle #ruleChat {
+    margin-left: 200px;
     margin-right: 200px;
     margin-top: 50px;
 }
-#photoGrid{
+
+#photoGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -207,9 +249,73 @@ h1{
     text-align: center;
     background-color: lavender;
 }
-#photoGrid div{
+
+#photoGrid div {
     margin: 10px;
 
     border: solid black 1px;
     font-size: 30px;
+}
+
+#ruleChat {
+    text-align: center;
+    font-size: 30px;
+}
+
+#ruleChat #comments {
+    text-align: left;
+    padding-left: 600px;
+}
+
+#postArticle {
+    display: block;
+    border: solid black 5px;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    font-family: '궁서';
+}
+
+#postChat {
+    text-align: center;
+    font-size: 30px;
+}
+
+#mainarticle #image {
+    text-align: center;
+
+}
+
+#mainarticle {
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#mainarticle #article ul {
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+}
+
+#order {
+    display: inline;
+    font-size: 50px;
+}
+
+#order ol {
+    text-align: center;
+}
+
+#infoChat {
+    text-align: center;
+    font-size: 30px;
+}
+
+#infoChat #comments {
+    text-align: left;
+    padding-left: 350px;
 }

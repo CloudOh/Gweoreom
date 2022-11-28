@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>구사모</title>
@@ -8,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav class="nav">
         <div id="menu">
-            <img src="Chelsea.png" width="30px">
+            <img src="img/Chelsea.png" width="30px">
             <ol>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="info.html" >about구름</a></li>
-                <li><a href="rule.html" >규칙</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">about구름</a></li>
+                <li><a href="rule.html">규칙</a></li>
                 <li><a href="photo.html">사진관</a></li>
+                <li><a href="post.html">게시판</a></li>
             </ol>
         </div>
     </nav>
@@ -28,58 +31,46 @@
             <li><a href="feat.html">구름이 특징</a></li>
         </ol>
         <div id="whereArticle">
-            <div id ="angelGrid">
-                <img src="angel.png" width="400px">
-                <div id ="angel">
+            <div id="angelGrid">
+                <img src="img/angel.png" width="400px">
+                <div id="angel">
                     <p>
                         궈럼이는 <b>유기견</b> 출신이예요.<br>저희 누나가 일하는 병원 정문 구석에 <br>쓸쓸히 앉아있었어요.<br>누군가 병원 앞에 두고 간 것이죠.
                     </p>
                 </div>
             </div>
-            <div id = "ysGrid">
+            <div id="ysGrid">
                 <p>
-                    여기에 스토리가 하나 있어요.<br>구름이 이전에 저희는 <b>양순이</b>라는<br>강아지를 키웠답니다.<br><br>양순이는 5년 전에 세상을 떠났어요.<br>저희 가족의 첫 사별이기에<br>
-                    저희는 양순이의 자리를<br>쉽게 떠나보내지 못했어요.<br><br>그때, 구름이가 찾아온거예요.<br>정말 놀랍게도 구름이는<br>양순이와 같은 말티푸였어요.<br><br>이게 과연 우연일까요?<br>저는 믿고있어요.<br><mark>구름이는 양순이가 다시 돌아온 것임을.</mark><br><br>양순이의 사진이에요.<br> 정말 닮았죠?
+                    여기에 스토리가 하나 있어요.<br>구름이 이전에 저희는 <b>양순이</b>라는<br>강아지를 키웠답니다.<br><br>양순이는 5년 전에 세상을 떠났어요.<br>저희 가족의 첫
+                    사별이기에<br>
+                    저희는 양순이의 자리를<br>쉽게 떠나보내지 못했어요.<br><br>그때, 구름이가 찾아온거예요.<br>정말 놀랍게도 구름이는<br>양순이와 같은 말티푸였어요.<br><br>이게
+                    과연 우연일까요?<br>저는 믿고있어요.<br>구름이는 양순이가 다시 돌아온 것임을.<br><br>양순이의 사진이에요.<br> 정말 닮았죠?
                 </p>
-                <div id = "Ysimg">
-                    <img src="ys.jpg" width = "400px">
+                <div id="Ysimg">
+                    <img src="img/ys.jpg" width="400px">
                 </div>
             </div>
-            <p>   
-                <div id="disqus_thread"></div>
-                    <script>
-                        /**
-                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                        /*
-                        var disqus_config = function () {
-                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                        };
-                        */
-                        (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://gweoreom.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <p>
+            <div id="infoChat">
+                <h2>소감</h2>
+                <form action="/dogs" id="instaForm">
+                    <input type="text" name="username" placeholder="이름"
+                        style="width:300px;height: 30px;font-size:30px;" />
+                    <input type="text" name="comment" placeholder="소감"
+                        style="width:300px; height: 30px;font-size:30px;" />
+                    <button style="width:100px;height:25px;font-size:15px; ">댓글 달기</button>
+                </form>
+
+
+                <ul id="comments">
+                    <h2>[댓글]</h2>
+                </ul>
+                <script src="comment.js"></script>
+            </div>
             </p>
         </div>
     </div>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/62b6ebab7b967b11799673d7/1g6d8h6eg';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
-        <!--End of Tawk.to Script-->
+
 </body>
+
 </html>

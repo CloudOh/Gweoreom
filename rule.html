@@ -7,72 +7,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <nav class="nav">
         <div id="menu">
-            <img src="Chelsea.png" width="30px">
+            <img src="img/Chelsea.png" width="30px">
             <ol>
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="info.html" >about구름</a></li>
                 <li><a href="rule.html" >규칙</a></li>
                 <li><a href="photo.html">사진관</a></li>
+                <li><a href="post.html">게시판</a></li>
             </ol>
         </div>
     </nav>
     <h1>구사모 <b>규칙</b></h1>
     <div id ="ruleArticle">
         <p>
-            <b>지금부터 말하는 룰을 어길시 <mark>사형</mark>에 처함.</b>
+            <b>규칙 위반 시 <mark>영구제명</mark>처리</b>
         </p>
         <p>
             첫째, 궈럼이에 대한 어떠한 <strong>부정적</strong> 의견도 내서는 안된다.
             <br><br>둘째, 사이트 작성자에 대한 어떠한 <strong>부정적</strong> 의견도 안된다.<br><br>셋째, 궈럼이는 <mark><strong>귀엽다</strong></mark>고 크게 복창한다.<br><br>
-            넷째, 주인이 구름이를 궈럼이라 부른다고 토달지 않는다.<br><br>다섯째, 궈럼이 간식을 남용하지 않는다.<br><br>
-            여섯째, 반려견은 <strong><mark>책임감</mark></strong> 없이 기르지 않는다.<br><br>일곱째, 절대 유기견에게 돌팔매질을 가하지 않는다.(<i>즉결처형</i>)
+            넷째, 주인이 구름이를 궈럼이라 부른다고 토달지 않는다.<br><br>다섯째, 궈럼이가 무병장수하길 기도한다.<br><br>
+            여섯째, 반려견은 <strong><mark>책임감</mark></strong> 없이 기르지 않는다.<br><br>
         </p>
-        <div id="ruleEnd">
-            <p>
-                위 일곱개의 규칙은 절대적이고, 영구하다.<br>
-                처형은 주인장 맘이며, 언제 치뤄지는지 주인장도 모른다.<br>그러니 절대 어기지 말도록 하자.
-            </p>
-        </div>
-        <div id="ruleChat">
-            <p>   
-                <div id="disqus_thread"></div>
-                    <script>
-                        /**
-                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                        /*
-                        var disqus_config = function () {
-                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                        };
-                        */
-                        (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://gweoreom.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </p>
-        </div>
     </div>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/62b6ebab7b967b11799673d7/1g6d8h6eg';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
-        <!--End of Tawk.to Script-->
+    <div id ="ruleChat">
+        <h2>불만사항</h2>
+        <form action="/dogs" id="instaForm">
+            <input type="text" name="username" placeholder="불편러" style="width:300px;height: 30px;font-size:30px;"/>
+            <input type="text" name="comment" placeholder="불만" style="width:300px; height: 30px;font-size:30px;"/>
+            <button style="width:100px;height:25px;font-size:15px; ">댓글 달기</button>
+        </form>
+        
+
+        <ul id="comments">
+            <h2>[댓글]</h2>
+        </ul>
+        <script src="comment.js"></script>
+    </div>
+    
+        
 </body>
 </html>
